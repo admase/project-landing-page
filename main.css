@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+:root {
+    /* Primary Color(s) */
+
+    /* 
+     * info-header-text 36px extra-bold 
+     * quote-text 36px light italic 
+     */
+    --bg-color: #1F2937;
+
+    /* 
+     * hero-main-text 48px extra-bold
+     * header-logo-text 24px 
+     */
+    --hero-main-text: #F9FAF8; 
+    
+    /* quote section bg */
+    --hero-link-text: #E5E7EB;
+    --bg-button-color: #3882F6;
+
+    /* Primary Font */
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 1rem;
+    --fw-default: 400;
+    --fw-light-italic: 300;
+    --fw-bold: 500;
+    --fw-bolder: 700;
+    --fw-extra-bolder: 900;
+}
+
+.fullscreen {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-os-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    touch-action: manipulation;
+    outline: none;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--fw-default);
+    margin: 0;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgb(0,0,0);
+}
+
+.wrapper {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    background: var(--bg-color);
+    position: relative;
+}
+
+.header .masthead {
+    font-size: 48px;
+    font-weight: var(--fw-extra-bolder);
+    color: var(--hero-main-text);
+}
+
+.header .subhead {
+    font-size: 18px;
+    color: var(--hero-link-text);
+}
+
+.header button, .header button:hover {
+    background-color: var(--bg-button-color);
+    color: var(--hero-link-text);
+    padding: 4px 30px;
+    text-align: center;
+    font-weight: var(--fw-bold);
+}
+
+.header .img-header {
+    width: 100%;
+    height: 275px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: var(--bg-color);
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.navbar .navbar-brand {
+    font-size: 24px;
+    color: var(--hero-main-text);
+    margin: 0;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar .nav-item {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.navbar .nav-link, .navbar .nav-link:focus {
+    color: var(--hero-link-text);
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: var(--hero-link-text);
+}
+
+/* Main */
+main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Section */
+.section-title h2 {
+    font-size: 36px;
+    font-weight: var(--fw-bolder);
+}
+
+.info-box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.info-box img {
+    width: 250px;
+    height: 150px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 8px auto;
+    background: var(--bg-color);
+}
+
+.info-box .img-caption {
+    font-size: 15px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+figure {
+    width: 100%;
+    margin: 3rem auto;
+    background-color: var(--hero-link-text);
+    padding: 75px;
+}
+
+.blockquote p {
+    color: var(--bg-color);
+    padding: 50px 50px 0 50px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: var(--fw-light-italic);
+    margin: 0 auto;
+}
+
+.blockquote-footer {
+    text-align: end;
+    font-weight: 600;
+    color: var(--bg-color);
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-button-color);
+    color: var(--hero-main-text);
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.call-to-action .pull-start {
+    padding-top: 30px;
+    padding-left: 75px;
+    padding-bottom: 0;
+    padding-right: 200px;
+}
+
+.call-to-action h6 {
+    font-weight: var(--fw-bolder);
+}
+
+.call-to-action button, .call-to-action button:hover {
+    border: 2px solid var(--hero-main-text);
+    padding: 4px 40px;
+    color: var(--hero-main-text);
+    margin-right: 90px;
+    margin-top: 20px;
+    font-weight: var(--fw-bold);
+    font-size: 15px;
+    width: 150px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 5rem;
+    background: var(--bg-color);
+    color: var(--hero-main-text);
+    text-align: center;
+    padding: 20px 0;
+    vertical-align: middle;
+}
